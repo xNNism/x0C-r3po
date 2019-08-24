@@ -40,7 +40,8 @@ Flags:
 ```
 ###### /etc/pacman.conf:
 ```
-[x0c-r3po]  
-SigLevel = PackageRequired  
-Server = file:///path/to/x0c-r3po/
+[x0C-r3po]
+SigLevel = Optional TrustAll
+Server = https://raw.githubusercontent.com/xNNism/x0c-r3po/master/  
+# Server = file:///path/to/x0C-r3po  
 ```
