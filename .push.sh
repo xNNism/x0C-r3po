@@ -25,22 +25,30 @@ bldwht=${txtbld}$(tput setaf 7) # white
 # ${txtrst}
 txtrst=$(tput sgr0)             # Reset
 
-
-echo "# ${bldylw} updating repo...${txtrst}"
+echo
+echo "${bldred}# ${bldylw} Updating repo...${txtrst}"
+echo
+sleep 2
 repoctl update
 
-echo "# ${bldylw}remove links and rename x0C-r3po.db & x0C-r3po.files.${txtrst}"
+echo
+echo "${bldred}# ${bldylw}Remove links and rename x0C-r3po.db & x0C-r3po.files.${txtrst}"
+echo
 sleep 2
 rm x0C-r3po.db
 rm x0C-r3po.files
 mv x0C-r3po.db.tar.gz x0C-r3po.db
 mv x0C-r3po.files.tar.gz x0C-r3po.files
 
-echo "# ${bldylw} push updated repo to github${txtrst}"
+echo
+echo "${bldred}# ${bldylw} Push updated repo to Github${txtrst}"
+echo
 sleep 2
 git add --all
 git commit -m "add packages"
 git push
 
-echo "# ${bldylw}..done!"
+echo
+echo
+echo "${bldred}# ${bldylw}..Done!"
 sleep 3
