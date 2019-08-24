@@ -1,6 +1,6 @@
 # x0C-r3po
 
-after repoctl update remove links and rename the .tar.gz files.  
+###### After repoctl update remove links and rename the .tar.gz files:  
 
 `
 rm x0C-r3po.db && mv x0C-r3po.db.tar.gz x0C-r3po.db  
