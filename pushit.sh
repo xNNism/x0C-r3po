@@ -31,13 +31,7 @@ echo
 sleep 2
 repoctl update
 
-echo
-echo "${bldred} # ${bldylw}Remove links and rename x0C-r3po.db & x0C-r3po.files.${txtrst}"
-echo .
-echo ...
-echo ......
-echo .........
-sleep 2
+#
 rm x0C-r3po.db
 rm x0C-r3po.files
 mv x0C-r3po.db.tar.gz x0C-r3po.db
