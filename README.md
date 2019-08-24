@@ -1,6 +1,6 @@
 # x0C-r3po
 
-after repoctl update remove links and rename the .tar.gz files.  
+###### After repoctl update remove links and rename the .tar.gz files:  
 
 `
 rm x0C-r3po.db && mv x0C-r3po.db.tar.gz x0C-r3po.db  
@@ -40,7 +40,8 @@ Flags:
 ```
 ###### /etc/pacman.conf:
 ```
-[x0c-r3po]  
-SigLevel = PackageRequired  
-Server = file:///path/to/x0c-r3po/
+[x0C-r3po]
+SigLevel = Optional TrustAll
+Server = https://raw.githubusercontent.com/xNNism/x0c-r3po/master/  
+# Server = file:///path/to/x0C-r3po  
 ```
