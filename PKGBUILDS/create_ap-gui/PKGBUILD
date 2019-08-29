@@ -1,0 +1,26 @@
+# Maintainer : Christian Hofmann <chof@pfho.net>
+
+pkgname=create_ap-gui
+pkgver=1
+pkgrel=1
+pkgdesc="Gui application for easy creating access points"
+arch=(any)
+url="https://github.com/p-eli/create_ap-gui"
+license=('GPL')
+depends=(python create_ap net-tools)
+optdepends=()
+makedepends=(git)
+source=($pkgname::git+https://github.com/p-eli/create_ap-gui.git
+sha256sums=('SKIP')
+
+pkgver() {
+  cd "$pkgname"
+  }
+
+prepare() {
+  cd "$pkgname"
+}
+
+package() {
+python setup.py install
+}
